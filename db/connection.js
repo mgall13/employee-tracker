@@ -12,11 +12,11 @@ const connection = mysql.createConnection({
     console.log('Connected to the Employee Tracker Database!')
 );
 
-afterConnection = () => {
+sayHi = () => {
     console.log(".----------------------------------------------------------.")
     console.log("|                                                          |")
-    console.log("|          _             _    .__________________.         |")
-    console.log("|         | |           | |   |__________________|         |")
+    console.log("|          _             _       ._______________.         |")
+    console.log("|         | |           | |      |_______________|         |")
     console.log("|         | |           | |            |  |                |")
     console.log("|         | |           | |            |  |                |")
     console.log("|         | |           | |            |  |                |")
@@ -33,5 +33,5 @@ afterConnection = () => {
     console.log(".----------------------------------------------------------.")
 };
 
-afterConnection();
+sayHi();
 module.exports = connection;
